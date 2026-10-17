@@ -1,0 +1,21 @@
+{
+  "context_window": 24,
+  "prompt_tokens": 5,
+  "output_tokens": 5,
+  "safety_tokens": 2,
+  "groups": [
+    {"id": "policy", "required": true, "variants": [
+      {"id": "brief", "tokens": 2, "utility": 2, "text": "Synthetic policy: verify the request before applying changes."}
+    ]},
+    {"id": "a", "required": false, "variants": [
+      {"id": "full", "tokens": 6, "utility": 12, "text": "Synthetic source A: a detailed account of one possible cause."},
+      {"id": "brief", "tokens": 3, "utility": 4, "text": "Synthetic source A summary: one possible cause."}
+    ]},
+    {"id": "b", "required": false, "variants": [
+      {"id": "full", "tokens": 5, "utility": 9, "text": "Synthetic source B: a confirmed reproduction with observed symptoms."}
+    ]},
+    {"id": "c", "required": false, "variants": [
+      {"id": "full", "tokens": 5, "utility": 9, "text": "Synthetic source C: a verified workaround and a rollback procedure."}
+    ]}
+  ]
+}
